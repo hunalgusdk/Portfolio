@@ -10,4 +10,4 @@
 
 
 
-* EffectPool [구현 예정]
+* EffectPool [Object Pooling을 활용한 Effect Pool]
