@@ -1,7 +1,8 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+
+using System.Collections.Generic;
 
 public class PopupScene : MonoBehaviour
 {
@@ -25,8 +26,14 @@ public class PopupScene : MonoBehaviour
                 if (popup != null)
                 {
                     popup.Close();
+                    return;
                 }
             }
+        }
+
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            SceneManager.LoadScene("TitleScene");
         }
     }
 

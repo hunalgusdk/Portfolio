@@ -1,6 +1,8 @@
-﻿using System.Collections;
+﻿using UnityEngine;
+using UnityEngine.SceneManagement;
+
+using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
 
 public class AnimationScene : MonoBehaviour
 {
@@ -27,6 +29,14 @@ public class AnimationScene : MonoBehaviour
         for (int i = 0; i < clip.Length; ++i)
         {
             _animationList.Add(clip[i].name);
+        }
+    }
+
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            SceneManager.LoadScene("TitleScene");
         }
     }
 

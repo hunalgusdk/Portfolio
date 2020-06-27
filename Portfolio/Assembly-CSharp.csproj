@@ -68,6 +68,7 @@
     <Compile Include="Assets\Script\EffectPool\EffectPoolScene.cs" />
     <Compile Include="Assets\Script\Popup\Popup.cs" />
     <Compile Include="Assets\Script\Popup\PopupScene.cs" />
+    <Compile Include="Assets\Script\TitleScene\TitleScene.cs" />
     <None Include="Assets\ImportAsset\Hovl Studio\Procedural fire\Shaders\FireSphere.shader" />
     <None Include="Assets\ImportAsset\Hovl Studio\Procedural fire\Demo scene\Readme.txt" />
     <Reference Include="Unity.Timeline.Editor">

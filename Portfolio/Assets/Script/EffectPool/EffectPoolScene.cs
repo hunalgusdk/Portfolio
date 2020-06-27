@@ -1,6 +1,7 @@
-﻿using System.Collections;
+﻿using UnityEngine;
+using UnityEngine.SceneManagement;
+
 using System.Collections.Generic;
-using UnityEngine;
 
 public class EffectPoolScene : MonoBehaviour
 {
@@ -43,6 +44,11 @@ public class EffectPoolScene : MonoBehaviour
             {
                 effect.Show(pickingPosition);
             }
+        }
+
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            SceneManager.LoadScene("TitleScene");
         }
     }
 
